@@ -1,9 +1,8 @@
 {
   "expo": {
-    "name": "ProyectoFinal",
-    "slug": "ProyectoFinal",
+    "name": "PANADERIA",
+    "slug": "PANADERIA",
     "version": "1.0.0",
-    "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
