@@ -1,8 +1,8 @@
 import { useFonts } from 'expo-font';
-import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Dimensions} from 'react-native';
-import ShopNavigator from './src/navigation/ShopNavigator';
+import BottomTabNavigator from './src/navigation/BottomTabNavigator';
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
 
@@ -32,11 +32,9 @@ export default function App() {
   if (!loaded) return null
 
   return (
-    <ShopNavigator/>
-  //      <View style={styles.container}>
-  //        <Text style={styles.texto}>Open up App.js to start working on your app!</Text>
-  //        <StatusBar style="auto" />
-  //      </View>
+    <NavigationContainer>
+      <BottomTabNavigator />
+    </NavigationContainer>
   );
 }
 

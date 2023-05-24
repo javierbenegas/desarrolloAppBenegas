@@ -24,3 +24,4 @@ const CategoriesItem = ({ item, onSelected }) => {
 }
 
 export default CategoriesItem;
+
