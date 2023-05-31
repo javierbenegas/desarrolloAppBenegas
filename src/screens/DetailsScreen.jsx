@@ -1,8 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Button} from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
 import React from 'react'
 
-const DetailsScreen = ({route}) => {
-const food = route.params.product;
+const DetailsScreen = () => {
+    const dispatch = useDispatch();
+    const food = useSelector (state => state.products.selected);
+
+    const handleAddItem = () => {
+        dispatch(add_item(food));
+    };
 
     return (
         <View style={styles.container}>
